@@ -1,0 +1,15 @@
+
+.footer {
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffeecc; 
+    color: #8B4513;
+    padding: 10px;
+    text-align: center;
+    border-top: 4px solid #6B3E1D
+  }
+  
+  

@@ -1,0 +1,26 @@
+.header {
+    background-color: #ffeecc; /* Coffee-themed background color */
+    color: #8B4513; /* Brown text color */
+    padding: 20px;
+    border-bottom: 4px solid #6B3E1D; /* Darker brown border at the bottom */
+}
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+  
+  .left h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Dancing Script', cursive; /* Coffee-themed font */
+  }
+  
+  .right .coffee-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #8B4513; /* Brown color for the coffee cup icon */
+  }

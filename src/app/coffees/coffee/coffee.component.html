@@ -1,0 +1,21 @@
+     <div *ngIf="coffeeDetail$ | async as coffee">
+        <div class="coffee-details">
+          <mat-card class="coffee-card">
+            <mat-card-header>
+              <div class="coffee-title">
+                <mat-card-title >{{ coffee.blend_name }}</mat-card-title>
+              </div>
+            </mat-card-header>
+            <img mat-card-image class="coffee-image" src="../../../assets/images/your-own-coffee.jpg" />
+            <mat-card-content>
+              <div class="coffee-info">
+                <p><strong>intensifier:</strong> {{ coffee.intensifier }}</p>
+                <p><strong>notes:</strong> {{ coffee.notes }}</p>
+                <p><strong>Origin:</strong> {{ coffee.origin }}</p>
+                <p><strong>Variety:</strong> {{ coffee.variety }}</p>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      

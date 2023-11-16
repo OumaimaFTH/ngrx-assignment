@@ -1,0 +1,24 @@
+.coffee-card {
+    color: #5d4037; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    margin: 20px;
+  }
+  
+  .coffee-title {
+    font-family: 'Arial', sans-serif; 
+    font-size: 24px;
+    color: #3e2723; 
+  }
+  
+  .coffee-content {
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px; 
+    color: #3e2723;
+  }
+  
+  .coffee-actions button {
+    background-color: #3e2723;
+    color: #ffffff; 
+    border-radius: 5px; 
+  }

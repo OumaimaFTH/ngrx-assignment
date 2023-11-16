@@ -1,0 +1,26 @@
+<div class="container responsive-grid">
+    <mat-card *ngFor="let coffee of (coffeeList$ | async)?.slice(calculateStartIndex(), calculateEndIndex())" class="coffee-card">
+      <mat-card-header>
+        <mat-card-title class="coffee-title">{{coffee.blend_name}}</mat-card-title>
+        <mat-card-subtitle>{{coffee.intensifier}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="coffee-content">
+        <p>
+          <span class="big-text">Coffee Notes:</span>
+          <span class="small-text">{{coffee.notes}}</span>
+        </p>
+        <p>
+          <span class="big-text">Coffee Origin:</span>
+          <span class="small-text">{{coffee.origin}}</span>
+        </p>
+        <p>
+          <span class="big-text">Coffee Variety:</span>
+          <span class="small-text">{{coffee.variety}}</span>
+        </p>
+      </mat-card-content>
+      <mat-card-actions class="coffee-actions">
+        <button mat-button color="primary" [routerLink]="['/coffees', coffee.id]">View Detail</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <mat-paginator [length]="totalItems" [pageSize]="itemsPerPage" (page)="pageChanged($event)"></mat-paginator>
